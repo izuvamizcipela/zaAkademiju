@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onClick="showMenu()"></i>
+            </nav>
+            <h1>Blog</h1>
+        </section>
+
+<!--------------------------------- Blog Page ----------------------------------------->
+       		
+        <section class="facilities-2">
+            <div class="row">
+                <div class="facilities-col-2">
+                    <img src="akademija/degustacije.jpg">
+                </div>
+                <div class="promocija-pica">
+                    <h1 class="akad-kafa">Zašto je naša kafa tako specijalna</h1>
+                    <p class="tekst">Više faktora čine savršenu kafu, a mi smo sebi zadali zadatak da ih sve ispunimo: 
+                    najkvalitetnija zrna arabike sa geografskim poreklom, mlevena u trenutku, sa svim sačuvanim karakteristikama, izražajna, aromatična, zdravija od 
+                    komercijalnih kafa, ispijana sa ili bez mleka. Odaberite Vašu kafu i način pripreme i uživajte!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="facilities-col-2">
+                    <img src="akademija/termos-promocija.jpg">
+                </div>
+                <div class="promocija-pica">
+                    <h1 class="akad-kafa">Zašto je naša kafa tako specijalna</h1>
+                    <p class="tekst">Više faktora čine savršenu kafu, a mi smo sebi zadali zadatak da ih sve ispunimo: 
+                    najkvalitetnija zrna arabike sa geografskim poreklom, mlevena u trenutku, sa svim sačuvanim karakteristikama, izražajna, aromatična, zdravija od 
+                    komercijalnih kafa, ispijana sa ili bez mleka. Odaberite Vašu kafu i način pripreme i uživajte!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="facilities-col-2">
+                    <img src="akademija/radionica.jpg">
+                </div>
+                <div class="promocija-pica">
+                    <h1 class="akad-kafa">Zašto je naša kafa tako specijalna</h1>
+                    <p class="tekst">Više faktora čine savršenu kafu, a mi smo sebi zadali zadatak da ih sve ispunimo: 
+                    najkvalitetnija zrna arabike sa geografskim poreklom, mlevena u trenutku, sa svim sačuvanim karakteristikama, izražajna, aromatična, zdravija od 
+                    komercijalnih kafa, ispijana sa ili bez mleka. Odaberite Vašu kafu i način pripreme i uživajte!</p>
+                </div>
+            </div>
+        </section>
+
+
+
+<!-------------------------------- Sidebar ------------------------------------------>
+
+        <div class="sidebar">
+            <div class="radno-mesto">
+                <p>Radno Vreme</p>
+            </div>
+            <div class="rad-lokala">
+                <p>Ponedelja</p>
+                <p>Utorak</p>
+                <p>Sreda</p>
+                <p>Cetvrtak</p>
+                <p>Petak</p>
+                <p>Subota</p>
+                <p>Nedelja</p>
+            </div>
+            <div class="rad-lokala-vreme">
+                <P>7:00 - 23:00</P>
+                <P>7:00 - 23:00</P>
+                <P>7:00 - 23:00</P>
+                <P>7:00 - 23:00</P>
+                <P>7:00 - 00:00</P>
+                <P>7:00 - 00:00</P>
+                <P>Closed</P>
+            </div>
+            <div class="logo-image">
+                <img src="akademija/logo-2.png">
+               
+            </div>
+        </div>
+        
+<!----------------------------------- Footer -------------------------------->  
+
+        <section class="footer">
+            <h4>O Nama</h4>
+            <p>U svakom trenutku možete odabrati jednu od 5 kafa po Vašem ukusu. 
+            Birajte između intenzivnih, kremastih, citrusnih ili mlečniharoma, 
+            kao i koji način pripreme Vam više odgovara: espresso<br>ili filter, 
+            sa ili bez mleka, sa različitim dodacima, kao i da li želite bezkofeinsku 
+            kafu.</p>
+            <div class="icons">
+                <a class="facebook-fb" href="https://www.facebook.com/akademijans/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="instagram-ig" href="https://www.instagram.com/akademijans/?hl=en">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+
+
+<!-----------------JavaScript for Toggle Menu--------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

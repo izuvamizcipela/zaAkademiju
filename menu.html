@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onClick="showMenu()"></i>
+            </nav>
+            <h1>Šta Vam Nudimo</h1>
+        </section>
+
+<!-------------------------- Menu ----------------------------------------->
+
+        <section class="menu">
+            <h1>Šta Vam Nudimo</h1>
+            <p>Mi smo old school kafeterija. Govorimo jezikom kafe.</p>
+
+            <div class="row">
+                <div class="menu-col">
+                    <h3>Kafa</h3>
+                    <p>U svakom trenutku možete odabrati jednu od 5 kafa po Vašem ukusu. 
+                    Birajte između intenzivnih, kremastih, citrusnih ili mlečnih aroma, 
+                    kao i koji način pripreme Vam više odgovara: espresso ili filter, 
+                    sa ili bez mleka, sa različitim dodacima, kao i da li želite bezkofeinsku 
+                    kafu.
+                    </p>
+                </div>
+                <div class="menu-col">
+                    <h3>Nealkoholna pića</h3>
+                    <p>U svakom trenutku možete odabrati jednu od 5 kafa po Vašem ukusu. 
+                    Birajte između intenzivnih, kremastih, citrusnih ili mlečnih aroma, 
+                    kao i koji način pripreme Vam više odgovara: espresso ili filter, 
+                    sa ili bez mleka, sa različitim dodacima, kao i da li želite bezkofeinsku 
+                    kafu.
+                    </p>
+                </div>
+                <div class="menu-col">
+                    <h3>Alkoholna pića</h3>
+                    <p>U svakom trenutku možete odabrati jednu od 5 kafa po Vašem ukusu. 
+                    Birajte između intenzivnih, kremastih, citrusnih ili mlečnih aroma, 
+                    kao i koji način pripreme Vam više odgovara: espresso ili filter, 
+                    sa ili bez mleka, sa različitim dodacima, kao i da li želite bezkofeinsku 
+                    kafu.
+                    </p>
+                </div>
+            
+            </div>
+        </section>
+
+
+<!------------------------------ Proizvodi ------------------------------------------>
+
+        <section class="slajder-sekcija">
+            <!--Basic structure of slider-->
+            <div class="container">
+                <!--Area of the images-->
+                <div class="wrapper">
+                    <img src="akademija/kafa-4-1200x800.png">
+                    <img src="akademija/kafa-1-1200x800.png">
+                    <img src="akademija/akademija-caffe-mocha-1200x800.png">
+                    <img src="akademija/kafa-3-1200x800.png">
+                    <img src="akademija/pice-2.jpg">
+                </div>
+
+            </div>
+
+            
+        </section>
+
+<!----------------------------------- Footer -------------------------------->  
+
+        <section class="footer">
+            <h4>O Nama</h4>
+            <p>U svakom trenutku možete odabrati jednu od 5 kafa po Vašem ukusu. 
+            Birajte između intenzivnih, kremastih, citrusnih ili mlečniharoma, 
+            kao i koji način pripreme Vam više odgovara: espresso<br>ili filter, 
+            sa ili bez mleka, sa različitim dodacima, kao i da li želite bezkofeinsku 
+            kafu.</p>
+            <div class="icons">
+                <a class="facebook-fb" href="https://www.facebook.com/akademijans/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="instagram-ig" href="https://www.instagram.com/akademijans/?hl=en">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+
+
+<!-----------------JavaScript for Toggle Menu--------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
